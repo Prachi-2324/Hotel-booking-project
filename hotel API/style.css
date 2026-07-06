@@ -1,0 +1,418 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:rgb(255, 255, 255);
+}
+
+/* ================= NAVBAR ================= */
+
+header{
+    width:100%;
+    background:#0f172a;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+}
+
+.logo i{
+    color:#ffc107;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:17px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ffc107;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,.5),
+    rgba(0,0,0,.5)),
+    url("image/banner.png");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content{
+    color:white;
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:22px;
+    margin-bottom:40px;
+}
+
+/* ================= SEARCH BOX ================= */
+
+.search-box{
+    display:flex;
+    background:white;
+    padding:10px;
+    border-radius:10px;
+    gap:10px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.search-box input{
+    width:280px;
+    padding:15px;
+    border:none;
+    outline:none;
+    border-radius:8px;
+    background:#eee;
+}
+
+.search-box select{
+    width:200px;
+    padding:15px;
+    border:none;
+    outline:none;
+    border-radius:8px;
+    background:#eee;
+}
+
+.search-box button{
+    padding:15px 35px;
+    background:#ff9800;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.search-box button:hover{
+    background:#ff6f00;
+    transform:scale(1.05);
+}
+
+/* ================= HEADING ================= */
+
+.heading{
+    text-align:center;
+    margin:60px 0 40px;
+    font-size:38px;
+    color:#0f172a;
+}
+/* ================= FEATURES ================= */
+
+.features{
+    width:90%;
+    margin:70px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.feature{
+    background:#fff;
+    text-align:center;
+    padding:35px 20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.feature:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.feature i{
+    font-size:50px;
+    color:#ff9800;
+    margin-bottom:20px;
+}
+
+.feature h3{
+    margin-bottom:12px;
+    color:#0f172a;
+}
+
+.feature p{
+    color:#666;
+    line-height:25px;
+}
+
+/* ================= HOTEL CARDS ================= */
+
+#hotelContainer{
+    width:90%;
+    margin:50px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.hotel-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.hotel-card:hover{
+    transform:translateY(-8px);
+}
+
+.hotel-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.hotel-info{
+    padding:20px;
+}
+
+.hotel-info h3{
+    color:#0f172a;
+    margin-bottom:10px;
+}
+
+.hotel-info p{
+    margin:8px 0;
+    color:#666;
+}
+
+.price{
+    font-size:22px;
+    color:#ff5722;
+    font-weight:bold;
+}
+
+.rating{
+    color:#ffc107;
+    font-size:18px;
+}
+
+.hotel-info button{
+    width:100%;
+    margin-top:15px;
+    padding:12px;
+    border:none;
+    background:#0f172a;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.hotel-info button:hover{
+    background:#ff9800;
+}
+
+/* ================= OFFERS ================= */
+
+.offer-box{
+    width:90%;
+    margin:60px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.offer-box div{
+    background:linear-gradient(135deg,#ff9800,#ff5722);
+    color:white;
+    text-align:center;
+    padding:40px;
+    border-radius:15px;
+    transition:.4s;
+}
+
+.offer-box div:hover{
+    transform:scale(1.05);
+}
+
+.offer-box h3{
+    font-size:35px;
+    margin-bottom:10px;
+}
+
+.offer-box p{
+    font-size:18px;
+}
+/* ================= ABOUT ================= */
+
+#about{
+    width:90%;
+    margin:80px auto;
+    text-align:center;
+}
+
+#about p{
+    max-width:900px;
+    margin:auto;
+    font-size:18px;
+    line-height:32px;
+    color:#555;
+}
+
+/* ================= CONTACT ================= */
+
+#contact{
+    width:90%;
+    margin:80px auto;
+}
+
+#contact form{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+#contact input,
+#contact textarea{
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+}
+
+#contact textarea{
+    height:150px;
+    resize:none;
+}
+
+#contact button{
+    padding:15px;
+    border:none;
+    background:#ff9800;
+    color:white;
+    font-size:18px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#contact button:hover{
+    background:#e68900;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+footer h2{
+    margin-bottom:10px;
+}
+
+footer p{
+    margin:10px 0;
+}
+
+footer div{
+    margin:20px 0;
+}
+
+footer i{
+    font-size:25px;
+    margin:0 12px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+footer i:hover{
+    color:#ff9800;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    padding:20px;
+}
+
+nav ul{
+    flex-direction:column;
+    text-align:center;
+    margin-top:20px;
+}
+
+nav ul li{
+    margin:10px 0;
+}
+
+.hero-content h1{
+    font-size:38px;
+}
+
+.hero-content p{
+    font-size:18px;
+}
+
+.search-box{
+    flex-direction:column;
+}
+
+.search-box input,
+.search-box select,
+.search-box button{
+    width:100%;
+}
+
+.heading{
+    font-size:30px;
+}
+
+.hotel-card img{
+    height:200px;
+}
+
+}

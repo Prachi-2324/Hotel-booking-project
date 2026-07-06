@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StayNest | Hotel Booking</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <div class="logo">
+        <i class="fa-solid fa-hotel"></i>
+        StayNest
+    </div>
+
+    <nav>
+
+        <ul>
+
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#hotels">Hotels</a></li>
+
+            <li><a href="#offers">Offers</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero">
+
+    < class="hero-content">
+
+        <h1>Find Your Dream Hotel</h1>
+
+        <p>Book Luxury Hotels at Affordable Prices</p>
+
+        <div class="search-box">
+
+            <input id="search" type="text"
+            placeholder="Search Hotel...">
+
+            <select id="city">
+
+                <option>All Cities</option>
+
+                <option>Delhi</option>
+
+                <option>Mumbai</option>
+
+                <option>Goa</option>
+
+                <option>Lucknow</option>
+
+            </select>
+            <select id="sort">
+
+                <option value="">Sort By</option>
+
+                <option value="low">Price Low-High</option>
+
+                <option value="high">Price High-Low</option>
+
+                <option value="rating">Rating</option>
+
+            </select>
+            <button>
+                Search
+            </button>
+        </div>    
+
+        <div class="filter-box">
+
+            <input type="number" id="minPrice" placeholder="Min Price">
+
+            <input type="number" id="maxPrice" placeholder="Max Price">
+
+            <button id="priceBtn">Apply Price</button>
+
+            <select id="rating">
+
+                <option value="">Rating</option>
+                <option value="5">5 Star</option>
+                <option value="4">4 Star & Above</option>
+                <option value="3">3 Star & Above</option>
+                <option value="2">2 Star & Above</option>
+                <option value="1">1 Star & Above</option>
+
+            </select>
+
+            <button onclick="resetFilters()">Reset</button>
+            
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FEATURES ================= -->
+
+<section class="features">
+
+<div class="feature">
+
+<i class="fa-solid fa-bed"></i>
+
+<h3>Luxury Rooms</h3>
+
+<p>Best rooms with premium facilities.</p>
+
+</div>
+
+<div class="feature">
+
+<i class="fa-solid fa-wifi"></i>
+
+<h3>Free WiFi</h3>
+
+<p>Unlimited high speed internet.</p>
+
+</div>
+
+<div class="feature">
+
+<i class="fa-solid fa-utensils"></i>
+
+<h3>Restaurant</h3>
+
+<p>Delicious food available.</p>
+
+</div>
+
+<div class="feature">
+
+<i class="fa-solid fa-car"></i>
+
+<h3>Parking</h3>
+
+<p>Safe parking available.</p>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= POPULAR HOTELS ================= -->
+
+<section id="hotels">
+
+<h2 class="heading">
+
+Popular Hotels
+
+</h2>
+
+<div id="hotelContainer">
+
+<!-- API Data Here -->
+
+</div>
+
+<div class="pagination">
+
+        <button onclick="prevPage()">
+            Previous
+        </button>
+
+        <button onclick="nextPage()">
+            Next
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= SPECIAL OFFERS ================= -->
+
+<section id="offers">
+
+<h2 class="heading">
+
+Today's Offers
+
+</h2>
+
+<div class="offer-box">
+
+<div>
+
+<h3>30% OFF</h3>
+
+<p>Luxury Hotels</p>
+
+</div>
+
+<div>
+
+<h3>20% OFF</h3>
+
+<p>Family Rooms</p>
+
+</div>
+
+<div>
+
+<h3>15% OFF</h3>
+
+<p>Weekend Booking</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+<h2 class="heading">
+
+Why Choose StayNest?
+
+</h2>
+
+<p>
+
+StayNest helps you find the best hotels with affordable prices,
+secure booking and trusted reviews.
+
+</p>
+
+</section>
+
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+<h2 class="heading">
+
+Contact Us
+
+</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<textarea placeholder="Message"></textarea>
+
+<button>
+
+Send Message
+
+</button>
+
+</form>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<h2>StayNest</h2>
+
+<p>
+
+Book Hotels Anytime Anywhere.
+
+</p>
+
+<div>
+
+<i class="fa-brands fa-facebook"></i>
+
+<i class="fa-brands fa-instagram"></i>
+
+<i class="fa-brands fa-x-twitter"></i>
+
+<i class="fa-brands fa-linkedin"></i>
+
+</div>
+
+<p>
+
+© 2026 StayNest. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
